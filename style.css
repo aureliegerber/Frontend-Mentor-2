@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: hsla(0, 0%, 100%, 1);
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.photo-mobile {
+    display: none;
+}
+
+.photo-desktop img {
+    display: block;
+    border-radius: 10px 0 0 10px;
+}
+
+h1, p {
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+h2, .price {
+    font-family: Fraunces;
+    line-height: 1.9rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    color: hsl(158, 36%, 37%);
+    margin-bottom: 1.5rem;
+}
+
+.product-description {
+    padding: 2rem;
+}
+
+span:first-child {
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+span:last-child {
+    color:hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    margin-left: 1.5rem;
+}
+
+.btn {
+    background: url(./images/icon-cart.svg) 50px no-repeat;
+    border: none;
+    padding: 1rem;
+    width: 230px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: hsla(0, 0%, 100%, 1);
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-wrap: wrap;
+        width: 343px;
+    }
+
+    .photo-desktop {
+        display: none;
+    }
+
+    .photo-mobile {
+        display: block;
+    }
+
+    .photo-mobile img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .btn {
+        width: 280px;
+    }
